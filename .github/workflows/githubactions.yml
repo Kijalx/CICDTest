@@ -14,7 +14,7 @@ jobs:
         with:
           java-version: '15'
           distribution: 'adopt'
-    test:
+    jobs:
       needs: [ build ]
       runs-on: ubuntu-latest
       steps:
