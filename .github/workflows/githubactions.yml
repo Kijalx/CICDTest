@@ -26,4 +26,4 @@ jobs:
             distribution: 'adopt'
 
         - name: Build with Maeven
-          run: mvn -B clean test
+          run: mvn -B package --file pom.xml
