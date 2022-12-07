@@ -5,7 +5,7 @@ public class Employee {
     private String gender;
     private String employmentType;
     private int age;
-    public Employee(String userName,String userPPSID,int userPhoneNumber,String userGender,String userEmploymentType,int userAge){
-        
+    public Employee(String empName,String empPPSID,int empPhoneNumber,String empGender,String employmentType,int empAge){
+
     }
 }
