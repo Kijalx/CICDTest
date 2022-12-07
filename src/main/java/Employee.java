@@ -6,7 +6,12 @@ public class Employee {
     private String employmentType;
     private int age;
     public Employee(String empName,String empPPSID,String empPhoneNumber,String empGender,String empType,int empAge){
-
+        setEmpName(empName);
+        setEmpPpsID(empPPSID);
+        setEmpPhoneNumber(empPhoneNumber);
+        setEmpGender(empGender);
+        setEmpType(empType);
+        setEmpAge(empAge);
     }
     public String getEmpName() {
         return name;
@@ -17,7 +22,7 @@ public class Employee {
             name = empName;
         }
         else{
-            new IllegalArgumentException("Name must have between 5 and 22 letters");
+            throw new IllegalArgumentException("Name must have between 5 and 22 letters");
         }
     }
 
@@ -25,12 +30,12 @@ public class Employee {
         return ppsID;
     }
 
-    public void setPpsID(String empPPSID) {
+    public void setEmpPpsID(String empPPSID) {
         if(empPPSID.length() >= 6){
             ppsID = empPPSID;
         }
         else{
-            new IllegalArgumentException("PPSID Must have 6 or more digits");
+            throw new IllegalArgumentException("PPSID Must have 6 or more digits");
         }
     }
 
@@ -39,11 +44,11 @@ public class Employee {
     }
 
     public void setEmpPhoneNumber(String empPhoneNumber) {
-        if(empPhoneNumber.length() == 11){
+        if(empPhoneNumber.length() >= 11){
             phoneNumber = empPhoneNumber;
         }
         else{
-            new IllegalArgumentException("Phone Number must have 11 digits");
+            throw new IllegalArgumentException("Phone Number must have 11 digits");
         }
     }
 
@@ -56,7 +61,7 @@ public class Employee {
             gender = empGender;
         }
         else{
-            new IllegalArgumentException("Gender must be either Man, Women or Non-Binary");
+            throw new IllegalArgumentException("Gender must be either Man, Women or Non-Binary");
         }
     }
 
@@ -69,7 +74,7 @@ public class Employee {
             employmentType = empType;
         }
         else{
-            new IllegalArgumentException("Employment type must be either Full-time or Part-time");
+            throw new IllegalArgumentException("Employment type must be either Full-time or Part-time");
         }
     }
 
@@ -77,7 +82,12 @@ public class Employee {
         return age;
     }
 
-    public void setAge(int empAge) {
-        this.age = age;
+    public void setEmpAge(int empAge) {
+        if(empAge >= 18){
+            age = empAge;
+        }
+        else{
+            throw new IllegalArgumentException("Employee must be over the age of 18");
+        }
     }
 }

@@ -10,15 +10,16 @@ class EmployeeTest {
     void setUp() {
     }
     @Test
-    void TestConstructor() { //Everything should pass
-        Employee emp = new Employee("Aleks Kijewski", "123456", "3530834552813", "Man", "Full-time", 21);
-        assertEquals("Aleks", emp.getEmpName());
+    void testConstructor() { //Everything should pass
+        Employee emp = new Employee("Aleks Kijewski", "123456", "08345528132", "Man", "Full-time", 21);
+        assertEquals("Aleks Kijewski", emp.getEmpName());
         assertEquals("123456", emp.getEmpPPSID());
-        assertEquals("0834552813", emp.getEmpPhoneNum());
+        assertEquals("08345528132", emp.getEmpPhoneNum());
         assertEquals("Man", emp.getEmpGender());
-        assertEquals("Full-Time", emp.getEmpType());
-        assertEquals(18, emp.getEmpAge());
+        assertEquals("Full-time", emp.getEmpType());
+        assertEquals(21, emp.getEmpAge());
     }
+ 
     @AfterEach
     void tearDown() {
     }
