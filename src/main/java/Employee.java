@@ -22,7 +22,7 @@ public class Employee {
             name = empName;
         }
         else{
-            new IllegalArgumentException("Name must have between 5 and 22 letters");
+            throw new IllegalArgumentException("Name must have between 5 and 22 letters");
         }
     }
 
@@ -35,7 +35,7 @@ public class Employee {
             ppsID = empPPSID;
         }
         else{
-            new IllegalArgumentException("PPSID Must have 6 or more digits");
+            throw new IllegalArgumentException("PPSID Must have 6 or more digits");
         }
     }
 
@@ -48,7 +48,7 @@ public class Employee {
             phoneNumber = empPhoneNumber;
         }
         else{
-            new IllegalArgumentException("Phone Number must have 11 digits");
+            throw new IllegalArgumentException("Phone Number must have 11 digits");
         }
     }
 
@@ -61,7 +61,7 @@ public class Employee {
             gender = empGender;
         }
         else{
-            new IllegalArgumentException("Gender must be either Man, Women or Non-Binary");
+            throw new IllegalArgumentException("Gender must be either Man, Women or Non-Binary");
         }
     }
 
@@ -74,7 +74,7 @@ public class Employee {
             employmentType = empType;
         }
         else{
-            new IllegalArgumentException("Employment type must be either Full-time or Part-time");
+            throw new IllegalArgumentException("Employment type must be either Full-time or Part-time");
         }
     }
 
@@ -87,7 +87,7 @@ public class Employee {
             age = empAge;
         }
         else{
-            new IllegalArgumentException("Employee must be over the age of 18");
+            throw new IllegalArgumentException("Employee must be over the age of 18");
         }
     }
 }
