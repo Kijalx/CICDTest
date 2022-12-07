@@ -6,7 +6,12 @@ public class Employee {
     private String employmentType;
     private int age;
     public Employee(String empName,String empPPSID,String empPhoneNumber,String empGender,String empType,int empAge){
-
+        setEmpName(empName);
+        setEmpPpsID(empPPSID);
+        setEmpPhoneNumber(empPhoneNumber);
+        setEmpGender(empGender);
+        setEmpType(empType);
+        setEmpAge(empAge);
     }
     public String getEmpName() {
         return name;
@@ -25,7 +30,7 @@ public class Employee {
         return ppsID;
     }
 
-    public void setPpsID(String empPPSID) {
+    public void setEmpPpsID(String empPPSID) {
         if(empPPSID.length() >= 6){
             ppsID = empPPSID;
         }
@@ -77,7 +82,12 @@ public class Employee {
         return age;
     }
 
-    public void setAge(int empAge) {
-        this.age = age;
+    public void setEmpAge(int empAge) {
+        if(empAge >= 18){
+            age = empAge;
+        }
+        else{
+            new IllegalArgumentException("Employee must be over the age of 18");
+        }
     }
 }
