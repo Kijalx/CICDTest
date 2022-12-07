@@ -20,3 +20,7 @@ jobs:
         run: mvn -B compile --file pom.xml
       - name: Run tests with Maven
         run: mvn -B test --file pom.xml
+      - name: package with maven
+        run: mvn -B package --file pom.xml
+      - name:
+        run: mvn -B site --file pom.xml
