@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Employee.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">CICDTest</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Employee.java</span></div><h1>Employee.java</h1><pre class="source lang-java linenums">public class Employee {
+    private String name;
+    private String ppsID;
+    private String phoneNumber;
+    private String gender;
+    private String employmentType;
+    private int age;
+<span class="fc" id="L8">    public Employee(String empName,String empPPSID,String empPhoneNumber,String empGender,String empType,int empAge){</span>
+<span class="fc" id="L9">        setEmpName(empName);</span>
+<span class="fc" id="L10">        setEmpPpsID(empPPSID);</span>
+<span class="fc" id="L11">        setEmpPhoneNumber(empPhoneNumber);</span>
+<span class="fc" id="L12">        setEmpGender(empGender);</span>
+<span class="fc" id="L13">        setEmpType(empType);</span>
+<span class="fc" id="L14">        setEmpAge(empAge);</span>
+<span class="fc" id="L15">    }</span>
+    public String getEmpName() {
+<span class="fc" id="L17">        return name;</span>
+    }
+
+    public void setEmpName(String empName) {
+<span class="fc bfc" id="L21" title="All 4 branches covered.">        if(empName.length() &gt;= 5 &amp;&amp; empName.length() &lt;= 22){</span>
+<span class="fc" id="L22">            name = empName;</span>
+        }
+        else{
+<span class="fc" id="L25">            throw new IllegalArgumentException(&quot;Name must have between 5 and 22 letters&quot;);</span>
+        }
+<span class="fc" id="L27">    }</span>
+
+    public String getEmpPPSID() {
+<span class="fc" id="L30">        return ppsID;</span>
+    }
+
+    public void setEmpPpsID(String empPPSID) {
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        if(empPPSID.length() &gt;= 6){</span>
+<span class="fc" id="L35">            ppsID = empPPSID;</span>
+        }
+        else{
+<span class="fc" id="L38">            throw new IllegalArgumentException(&quot;PPSID Must have 6 or more digits&quot;);</span>
+        }
+<span class="fc" id="L40">    }</span>
+
+    public String getEmpPhoneNum() {
+<span class="fc" id="L43">        return phoneNumber;</span>
+    }
+
+    public void setEmpPhoneNumber(String empPhoneNumber) {
+<span class="fc bfc" id="L47" title="All 2 branches covered.">        if(empPhoneNumber.length() &gt;= 11){</span>
+<span class="fc" id="L48">            phoneNumber = empPhoneNumber;</span>
+        }
+        else{
+<span class="fc" id="L51">            throw new IllegalArgumentException(&quot;Phone Number must have 11 digits&quot;);</span>
+        }
+<span class="fc" id="L53">    }</span>
+
+    public String getEmpGender() {
+<span class="fc" id="L56">        return gender;</span>
+    }
+
+    public void setEmpGender(String empGender) {
+<span class="fc bfc" id="L60" title="All 6 branches covered.">        if(empGender.equalsIgnoreCase(&quot;man&quot;) || empGender.equalsIgnoreCase(&quot;women&quot;) || empGender.equalsIgnoreCase(&quot;non-binary&quot;)){</span>
+<span class="fc" id="L61">            gender = empGender;</span>
+        }
+        else{
+<span class="fc" id="L64">            throw new IllegalArgumentException(&quot;Gender must be either Man, Women or Non-Binary&quot;);</span>
+        }
+<span class="fc" id="L66">    }</span>
+
+    public String getEmpType() {
+<span class="fc" id="L69">        return employmentType;</span>
+    }
+
+    public void setEmpType(String empType) {
+<span class="fc bfc" id="L73" title="All 4 branches covered.">        if(empType.equalsIgnoreCase(&quot;full-time&quot;) || empType.equalsIgnoreCase(&quot;part-time&quot;)){</span>
+<span class="fc" id="L74">            employmentType = empType;</span>
+        }
+        else{
+<span class="fc" id="L77">            throw new IllegalArgumentException(&quot;Employment type must be either Full-time or Part-time&quot;);</span>
+        }
+<span class="fc" id="L79">    }</span>
+
+    public int getEmpAge() {
+<span class="fc" id="L82">        return age;</span>
+    }
+
+    public void setEmpAge(int empAge) {
+<span class="fc bfc" id="L86" title="All 2 branches covered.">        if(empAge &gt;= 18){</span>
+<span class="fc" id="L87">            age = empAge;</span>
+        }
+        else{
+<span class="fc" id="L90">            throw new IllegalArgumentException(&quot;Employee must be over the age of 18&quot;);</span>
+        }
+<span class="fc" id="L92">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
