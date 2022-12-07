@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IE"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\g00396018\AppData\Local\Temp\surefire16019924287979057099\surefirebooter10314450961407849881.jar C:\Users\g00396018\AppData\Local\Temp\surefire16019924287979057099 2022-12-07T12-14-09_858-jvmRun1 surefire9404171417598423933tmp surefire_014973943916184818134tmp"/>
+    <property name="sun.java.command" value="C:\Users\g00396018\AppData\Local\Temp\surefire17957144670143103872\surefirebooter16496610250416912324.jar C:\Users\g00396018\AppData\Local\Temp\surefire17957144670143103872 2022-12-07T12-36-54_142-jvmRun1 surefire9695967277418271295tmp surefire_013294392729363049243tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\g00396018\IdeaProjects\CICDTest\target\test-classes;C:\Users\g00396018\IdeaProjects\CICDTest\target\classes;C:\Users\g00396018\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\g00396018\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\g00396018\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\g00396018\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\g00396018\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\g00396018\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\g00396018\AppData\Local\Temp\surefire16019924287979057099\surefirebooter10314450961407849881.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\g00396018\AppData\Local\Temp\surefire17957144670143103872\surefirebooter16496610250416912324.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.1+9-18"/>
@@ -56,15 +56,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="testEmpType" classname="EmployeeTest" time="0.055"/>
+  <testcase name="testEmpType" classname="EmployeeTest" time="0.056"/>
   <testcase name="testGenderFail" classname="EmployeeTest" time="0.004"/>
   <testcase name="testPhoneNumFail" classname="EmployeeTest" time="0.002"/>
   <testcase name="testAgeFail" classname="EmployeeTest" time="0.002"/>
-  <testcase name="testPPSIDFail" classname="EmployeeTest" time="0.002"/>
-  <testcase name="testEmpGender1" classname="EmployeeTest" time="0.002"/>
+  <testcase name="testPPSIDFail" classname="EmployeeTest" time="0.001"/>
+  <testcase name="testEmpGender1" classname="EmployeeTest" time="0.001"/>
   <testcase name="testEmpGender2" classname="EmployeeTest" time="0.001"/>
   <testcase name="testEmpTypeFail" classname="EmployeeTest" time="0.001"/>
   <testcase name="testNameFail1" classname="EmployeeTest" time="0.001"/>
-  <testcase name="testNameFail2" classname="EmployeeTest" time="0.002"/>
+  <testcase name="testNameFail2" classname="EmployeeTest" time="0.001"/>
   <testcase name="testConstructor" classname="EmployeeTest" time="0.001"/>
 </testsuite>
