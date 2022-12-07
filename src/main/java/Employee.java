@@ -30,7 +30,7 @@ public class Employee {
             ppsID = empPPSID;
         }
         else{
-            new IllegalArgumentException("Name must have between 5 and 22 letters");
+            new IllegalArgumentException("PPSID Must have 6 or more digits");
         }
     }
 
@@ -39,7 +39,12 @@ public class Employee {
     }
 
     public void setEmpPhoneNumber(String empPhoneNumber) {
-        this.phoneNumber = phoneNumber;
+        if(empPhoneNumber.length() == 11){
+            phoneNumber = empPhoneNumber;
+        }
+        else{
+            new IllegalArgumentException("Phone Number must have 11 digits");
+        }
     }
 
     public String getEmpGender() {
