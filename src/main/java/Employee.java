@@ -44,7 +44,7 @@ public class Employee {
     }
 
     public void setEmpPhoneNumber(String empPhoneNumber) {
-        if(empPhoneNumber.length() == 11){
+        if(empPhoneNumber.length() >= 11){
             phoneNumber = empPhoneNumber;
         }
         else{
