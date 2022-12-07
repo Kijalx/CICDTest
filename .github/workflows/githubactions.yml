@@ -1,7 +1,7 @@
 name: githubactions
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ origin ]
 
 jobs:
   build:
@@ -13,6 +13,6 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 15
-          
+
         - name: Build with Maeven
           run: mvn -B package --file pom.xml
