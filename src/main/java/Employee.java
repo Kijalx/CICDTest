@@ -1,8 +1,11 @@
 public class Employee {
-    private String Name;
-    private String PPSID;
-    private int PhoneNumber;
-    private String Gender;
-    private String EmploymentType;
-    private int Age;
+    private String name;
+    private String ppsID;
+    private int phoneNumber;
+    private String gender;
+    private String employmentType;
+    private int age;
+    public Employee(String userName,String userPPSID,int userPhoneNumber,String userGender,String userEmploymentType,int userAge){
+        
+    }
 }
