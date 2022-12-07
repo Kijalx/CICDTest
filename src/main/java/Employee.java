@@ -65,7 +65,12 @@ public class Employee {
     }
 
     public void setEmpType(String empType) {
-        this.employmentType = employmentType;
+        if(empType.equalsIgnoreCase("full-time") || empType.equalsIgnoreCase("part-time")){
+            employmentType = empType;
+        }
+        else{
+            new IllegalArgumentException("Employment type must be either Full-time or Part-time");
+        }
     }
 
     public int getEmpAge() {
