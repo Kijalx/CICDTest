@@ -52,7 +52,12 @@ public class Employee {
     }
 
     public void setEmpGender(String empGender) {
-        this.gender = gender;
+        if(empGender.equalsIgnoreCase("man") || empGender.equalsIgnoreCase("women") || empGender.equalsIgnoreCase("non-binary")){
+            gender = empGender;
+        }
+        else{
+            new IllegalArgumentException("Gender must be either Man, Women or Non-Binary");
+        }
     }
 
     public String getEmpType() {
